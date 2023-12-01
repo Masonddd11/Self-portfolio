@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero'
 import About from './components/About/About'
 import SNSwidgets from './components/Footer/SNSwidgets'
 import Projects from './components/Projects/Project'
+import Contact from './components/Contacts/Contact'
 
 function App() {
 
@@ -23,6 +24,9 @@ function App() {
         </section>
         <section id="projects">
           <Projects />
+        </section>
+        <section id="contact">
+          <Contact />
         </section>
       </div>
       <div className="footer">

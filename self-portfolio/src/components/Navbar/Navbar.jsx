@@ -28,7 +28,7 @@ function Navbar() {
         <LightbulbIcon style={{ fontSize: "1.7rem" }} />
       </a>
       <a
-        href="#contacts"
+        href="#contact"
         className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center"
       >
         <EmailIcon style={{ fontSize: "1.7rem" }} />

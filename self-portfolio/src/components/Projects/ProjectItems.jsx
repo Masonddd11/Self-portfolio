@@ -8,6 +8,7 @@ import TailwindCSS from "../../assets/Projects skills/TailwindCSS.png";
 
 function ProjectItems() {
   const projects = [{
+    Key: 1,
     Name: "Self-Portfolio",
     Description: "This is the project you are currenting viewing, this application mainly talks about my background and the skills I use. This is a single page application with a responsive design.",
     Image: SelfProfolio,
@@ -44,9 +45,9 @@ function ProjectItems() {
     }
   };  
 
-return projects.map((project) => {
+return projects.map((project,index) => {
   return (
-    <div className="max-w-sm border-[1.5px] p-3 bg-white rounded-[20px]
+    <div key={index} className="lg:max-w-sm sm:text-[1rem] border-[1.5px] lg:p-3 bg-white rounded-[20px]
     overflow-hidden border-gray-500">
       <a href="#">
         <img className="rounded-t-lg border-b-2 pb-2 " src={project.Image} alt="" />
@@ -62,8 +63,8 @@ return projects.map((project) => {
         </p>
         <div className="font-nomral mb-2 ml-[-5px] font-bold">Skilled used:</div>
         <div className="flex flex-wrap mb-2 space-x-1 text-sm font-medium lg:mb-4">
-          {project.Skill.map((skill) => {
-            return <div className=" h-[35px] w-[35px] rounded-full flex justify-center items-center bg-slate-300 mr-[2px]">{processPictures(skill)}</div>;
+          {project.Skill.map((skill,index) => {
+            return <div key={index} className=" h-[35px] w-[35px] rounded-full flex justify-center items-center bg-slate-300 mr-[2px]">{processPictures(skill)}</div>;
           })}
         </div>
         <a
@@ -79,6 +80,5 @@ return projects.map((project) => {
 }
    
       
-  
 
 export default ProjectItems;
