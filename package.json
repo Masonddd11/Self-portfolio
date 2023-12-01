@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.19",
+    "@mui/material": "^5.14.19",
+    "vite": "^5.0.4"
+  },
+  "name": "self-portfolio",
+  "description": "��#\u0000 \u0000S\u0000e\u0000l\u0000f\u0000-\u0000p\u0000o\u0000r\u0000t\u0000f\u0000o\u0000l\u0000i\u0000o\u0000\r\u0000 \u0000",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

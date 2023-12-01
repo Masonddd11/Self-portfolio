@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  #Info-text{
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  #Name-text{
+    font-family: 'Ephesis', cursive;
+  }
+}
+
