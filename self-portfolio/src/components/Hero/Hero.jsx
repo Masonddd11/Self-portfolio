@@ -3,7 +3,7 @@ import Logo from '../../assets/logo.png'
 
 function Hero() {
   return (
-    <div className='container min-w-full min-h-screen'>
+    <div className='container min-w-full min-h-screen dark:bg-black dark:text-white'>
       <div className="logo flex justify-center pt-[4rem] ">
         <img src={Logo} alt="Picture of the author" className=' object-contain w-[325px] h-[325px] md:w-[350px] md:w-[350px] sm:w-[325px] sm:[325px] lg:w-[400px] lg:h-[400px] 2xl:h-[500px] 2xl:h-[500px]' />
       </div>

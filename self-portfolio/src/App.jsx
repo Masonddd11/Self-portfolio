@@ -7,13 +7,19 @@ import SNSwidgets from './components/Footer/SNSwidgets'
 import Projects from './components/Projects/Project'
 import Contact from './components/Contacts/Contact'
 
-function App() {
 
+function App() {
+  
+  const [theme, setTheme] = useState('light')
+  
+  const toggleTheme = () => {
+    document.documentElement.classList.toggle('dark')
+  }
 
   return (
-    <>
+    <div className=''>
       <div className="header fixed top-0 flex min-w-[100%] justify-center z-50">
-        <Navbar />
+        <Navbar toggleTheme={toggleTheme} />
       </div>
       <div className="main ">
         <section id="hero">
@@ -32,7 +38,7 @@ function App() {
       <div className="footer">
         <SNSwidgets />
       </div>
-   </>
+   </div>
   )
 }
 
